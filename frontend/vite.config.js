@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/cadastro/', // Define o caminho base para a publicação no GitHub Pages
   plugins: [react()],
   server: {
     port: 3000, // Define a porta do frontend para 3000
