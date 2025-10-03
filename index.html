@@ -10,8 +10,7 @@
     <aside class="sidebar">
         <div class="sidebar-header">
             <img src="assets/logo_bancodoc.png" alt="BANCODOC Logo" class="logo">
-            <button class="toggle-btn">
-                < </button>
+            <button class="toggle-btn">&lt;&lt;</button>
         </div>
         <div class="info-header">
             <span class="info-icon">🛡️</span>
@@ -33,15 +32,30 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="menu-item" data-target="lancamentos">LANÇAMENTOS</a>
+                    <a href="#" class="menu-item has-submenu" data-target="lancamentos">LANÇAMENTOS</a>
                     <ul class="submenu" id="lancamentos">
+                        <li>
+                            <a href="#" class="menu-item has-submenu" data-target="planos-acao">Planos de Ação</a>
+                            <ul class="submenu-level-2" id="planos-acao">
+                                <li><a href="#" data-page="ra">R.A.</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-item has-submenu" data-target="cadastro-colaborador">Cadastro colaborador</a>
+                             <ul class="submenu-level-2" id="cadastro-colaborador">
+                                <li><a href="#" data-page="movimentacao-empregado">Movimentação Empregado</a></li>
+                                <li><a href="#" data-page="eventos">Eventos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" data-page="notificacao">Notificação</a></li>
+                        <li><a href="#" data-page="planilha-empregados">Planilha Empregados</a></li>
                         <li><a href="#" data-page="contrato">Contrato</a></li>
-                        <li><a href="#" data-page="cadastro-colaborador">Cadastro colaborador</a></li>
+                        <li><a href="#" data-page="gusto-individual">Gusto Individual</a></li>
                     </ul>
                 </li>
                 <li><a href="#" class="menu-item" data-target="ajuda">AJUDA</a></li>
                 <li><a href="#" class="menu-item" data-target="financeiro">FINANCEIRO</a></li>
-                <li><a href="#" class="menu-item" data-target="lancamentos-2">LANZAMIENTOS</a></li>
+                <li><a href="#" class="menu-item" data-target="lanzamientos">LANZAMIENTOS</a></li>
                 <li><a href="#" class="menu-item" data-target="informes">INFORMES</a></li>
                 <li><a href="#" class="menu-item" data-target="sismef">SISMEF</a></li>
                 <li><a href="#" class="menu-item" data-target="hcp">HCP</a></li>
@@ -63,8 +77,39 @@
             </div>
         </header>
         <section class="content" id="content">
-            <h1>Bem-vindo à Plataforma BANCODOC</h1>
-            <p>Selecione uma opção no menu para começar.</p>
+            <div class="dashboard-header">
+                <a href="#" class="rules-link">Consultar Regras do Programa</a>
+            </div>
+            <div class="dashboard-grid">
+                <div class="dashboard-card" data-page="cadastro-colaborador">
+                    <span class="card-icon">👤</span>
+                    <p>Cadastrar Colaborador</p>
+                </div>
+                <div class="dashboard-card">
+                    <span class="card-icon">🔍</span>
+                    <p>Consultar Status do Empregado</p>
+                </div>
+                <div class="dashboard-card">
+                    <span class="card-icon">🔄</span>
+                    <p>Movimentar Empregado</p>
+                </div>
+                <div class="dashboard-card">
+                    <span class="card-icon">❌</span>
+                    <p>Consultar Documentos Cancelados</p>
+                </div>
+                <div class="dashboard-card">
+                    <span class="card-icon">🏢</span>
+                    <p>Consultar Status da Empresa</p>
+                </div>
+                <div class="dashboard-card">
+                    <span class="card-icon">📄</span>
+                    <p>Depositar/Anexar Documentos Empregado ou Empresa</p>
+                </div>
+                <div class="dashboard-card">
+                    <span class="card-icon">💬</span>
+                    <p>Portal do Cliente - Fale com a nossa equipe</p>
+                </div>
+            </div>
         </section>
     </main>
     <script src="js/script.js"></script>
