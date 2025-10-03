@@ -3,8 +3,8 @@ import { useForm } from '@mantine/form';
 import { TextInput, Button, Paper, Title } from '@mantine/core';
 import axios from 'axios';
 
-// A URL da sua API. IMPORTANTE: A porta pode mudar! Verifique no terminal do backend.
-const API_URL = 'https://localhost:7123/api';
+// A URL da nossa API agora é um caminho relativo, pois o Vite fará o proxy.
+const API_BASE_URL = '/api';
 
 function ClientForm() {
   const form = useForm({
@@ -20,7 +20,7 @@ function ClientForm() {
 
   const handleSubmit = async (values) => {
     try {
-      await axios.post(`${API_URL}/clients`, values);
+      await axios.post(`${API_BASE_URL}/clients`, values);
       alert('Cliente cadastrado com sucesso!');
       form.reset();
     } catch (error) {
