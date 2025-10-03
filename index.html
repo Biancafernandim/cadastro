@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANCODOC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="assets/logo_bancodoc.png" alt="BANCODOC Logo" class="logo">
+            <button class="toggle-btn">
+                < </button>
+        </div>
+        <div class="info-header">
+            <span class="info-icon">🛡️</span>
+            <h2 class="info-title">Gestão de Informações</h2>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar menu...">
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#" class="menu-item" data-target="documento">DOCUMENTO</a></li>
+                <li><a href="#" class="menu-item" data-target="remessa">REMESSA</a></li>
+                <li><a href="#" class="menu-item" data-target="relatorios">RELATÓRIOS</a></li>
+                <li>
+                    <a href="#" class="menu-item" data-target="configuracoes">CONFIGURAÇÕES</a>
+                    <ul class="submenu" id="configuracoes">
+                        <li><a href="#" data-page="cliente">Cliente</a></li>
+                        <li><a href="#" data-page="fornecedor">Fornecedor</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="menu-item" data-target="lancamentos">LANÇAMENTOS</a>
+                    <ul class="submenu" id="lancamentos">
+                        <li><a href="#" data-page="contrato">Contrato</a></li>
+                        <li><a href="#" data-page="cadastro-colaborador">Cadastro colaborador</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="menu-item" data-target="ajuda">AJUDA</a></li>
+                <li><a href="#" class="menu-item" data-target="financeiro">FINANCEIRO</a></li>
+                <li><a href="#" class="menu-item" data-target="lancamentos-2">LANZAMIENTOS</a></li>
+                <li><a href="#" class="menu-item" data-target="informes">INFORMES</a></li>
+                <li><a href="#" class="menu-item" data-target="sismef">SISMEF</a></li>
+                <li><a href="#" class="menu-item" data-target="hcp">HCP</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <span class="service-icon">⚙️</span>
+            <span>Módulo de Serviço</span>
+        </div>
+    </aside>
+    <main class="main-content" id="main-content">
+        <header class="main-header">
+            <p>Seja Bem-vindo(a) ao <a href="#">Bancodoc!</a></p>
+            <div class="user-info">
+                <span>OAL Bianca Guedes</span>
+                <span class="user-initials">BG</span>
+                <span class="country-flag">🇧🇷</span>
+                <span class="notification-bell">🔔</span>
+            </div>
+        </header>
+        <section class="content" id="content">
+            <h1>Bem-vindo à Plataforma BANCODOC</h1>
+            <p>Selecione uma opção no menu para começar.</p>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

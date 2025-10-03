@@ -1,0 +1,178 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f0f2f5;
+    color: #e0e0e0;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    background-color: #2d3748; /* Dark gray/blue */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s;
+}
+
+.sidebar.collapsed {
+    width: 80px;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #1a202c; /* Even darker shade for header */
+}
+
+.logo {
+    height: 40px;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.info-header {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #3a4556;
+}
+
+.info-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.info-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.search-bar {
+    padding: 15px 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4a5568;
+    border-radius: 5px;
+    background-color: #2d3748;
+    color: white;
+}
+
+.sidebar-nav {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #4a5568;
+    position: relative;
+}
+
+.sidebar-nav a::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+}
+
+.sidebar-nav .submenu {
+    list-style: none;
+    padding-left: 20px;
+    display: none; /* Hidden by default */
+    background-color: #4a5568;
+}
+
+.sidebar-nav .submenu a {
+    padding-left: 30px;
+}
+
+.sidebar-nav .submenu a::after {
+    content: ''; /* Remove plus from sub-items */
+}
+
+
+.sidebar-footer {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #4a5568;
+}
+
+.service-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+.main-header a {
+    color: #e53e3e; /* Red/Orange color */
+    text-decoration: none;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info span {
+    margin-left: 15px;
+}
+
+.user-initials {
+    background-color: #e53e3e;
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    color: #333;
+}
+
+.content h1 {
+    margin-top: 0;
+}
