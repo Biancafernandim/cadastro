@@ -9,9 +9,8 @@ export default defineConfig({
     proxy: {
       // Redireciona requisições de /api para o backend
       '/api': {
-        target: 'https://localhost:7123', // A porta do seu backend .NET
+        target: 'http://localhost:5235', // A porta HTTP do backend
         changeOrigin: true,
-        secure: false,      // Necessário se o backend usa um certificado de desenvolvimento (HTTPS)
       }
     }
   }
